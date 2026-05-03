@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* Sunsets & Ryuk palette */
-  --color-sky-top: #2d1b4e;
-  --color-sky-mid: #ff5c8d;
-  --color-sky-bottom: #ff9a5c;
-  --color-sun-glow: #ffdd57;
+  /* Moonlit Ryuk palette */
+  --color-midnight-top: #0f0f1a;
+  --color-midnight-mid: #1a1a2e;
+  --color-midnight-deep: #0a0a0f;
+  --color-moon-glow: #e6f1ff;
+  --color-moon-core: #ffffff;
   --color-ryuk: #0a0a0a;
-  --color-ryuk-red: #ff0033;
-  --color-ryuk-glow: #ff4455;
+  --color-ryuk-silver: #c0c0c0;
+  --color-ryuk-cyan: #00d4ff;
+  --color-ryuk-glow: rgba(192, 192, 192, 0.6);
   --color-text-bone: #f5f5dc;
-  --color-text-muted: #a89f91;
+  --color-text-muted: #b0b0a0;
   --color-tower: #1a1a1a;
-  --color-cloud-light: rgba(255, 230, 200, 0.3);
-  --color-cloud-dark: rgba(60, 20, 40, 0.4);
+  --color-cloud-light: rgba(230, 241, 255, 0.15);
+  --color-cloud-dark: rgba(10, 10, 15, 0.6);
 
   --font-cinzel: var(--font-cinzel);
   --font-inter: var(--font-inter);
@@ -21,7 +23,7 @@
 }
 
 @theme inline {
-  --color-background: var(--color-sky-top);
+  --color-background: var(--color-midnight-top);
   --color-foreground: var(--color-text-bone);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-cinzel);
@@ -36,7 +38,7 @@ html {
 }
 
 body {
-  background: var(--color-sky-top);
+  background: var(--color-midnight-top);
   color: var(--color-text-bone);
   font-family: var(--font-inter), system-ui, sans-serif;
   overflow-x: hidden;
@@ -49,80 +51,80 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-sky-top);
+  background: var(--color-midnight-top);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-ryuk-red);
+  background: var(--color-ryuk-silver);
   border-radius: 4px;
-  box-shadow: 0 0 10px var(--color-ryuk-red);
+  box-shadow: 0 0 10px var(--color-ryuk-silver);
 }
 
-/* Floating cloud effect */
+/* Moonlit cloud layer */
 .cloud-layer {
   position: absolute;
   inset: 0;
   background:
     radial-gradient(ellipse 80% 50% at 30% 20%, var(--color-cloud-light), transparent 50%),
     radial-gradient(ellipse 60% 40% at 70% 30%, var(--color-cloud-dark), transparent 50%),
-    radial-gradient(ellipse 100% 60% at 50% 60%, rgba(255, 92, 141, 0.2), transparent 60%);
+    radial-gradient(ellipse 100% 60% at 50% 60%, rgba(192, 192, 192, 0.1), transparent 60%);
   pointer-events: none;
   opacity: 0.6;
   filter: blur(20px);
 }
 
-/* Ryuk's red glow */
+/* Ryuk's moonlit glow */
 .ryuk-glow {
-  color: var(--color-ryuk-red);
-  text-shadow: 0 0 20px var(--color-ryuk-red), 0 0 60px var(--color-ryuk-glow), 0 0 100px var(--color-ryuk-red);
+  color: var(--color-ryuk-silver);
+  text-shadow: 0 0 20px var(--color-ryuk-silver), 0 0 60px var(--color-ryuk-glow), 0 0 100px var(--color-ryuk-silver);
 }
 
-/* Gothic title with blood echo */
+/* Gothic title with moon echo */
 .ryuk-title {
   font-family: var(--font-cinzel), serif;
   letter-spacing: 0.08em;
   text-shadow:
     2px 2px 0 #000,
-    0 0 30px var(--color-ryuk-red),
-    0 0 60px var(--color-ryuk-red);
+    0 0 30px var(--color-ryuk-silver),
+    0 0 60px var(--color-ryuk-silver);
   color: var(--color-text-bone);
 }
 
-/* Segment / notebook page style */
+/* Death Note page — moonlit aesthetic */
 .death-note-page {
-  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-  border: 1px solid #333;
+  background: linear-gradient(135deg, #1a1a2e, #0a0a0f);
+  border: 1px solid var(--color-ryuk-silver);
   box-shadow:
-    inset 0 0 40px rgba(255, 0, 51, 0.05),
+    inset 0 0 40px rgba(192, 192, 192, 0.05),
     0 0 30px rgba(0, 0, 0, 0.9);
 }
 
-/* Industrial tower texture */
+/* Industrial tower texture — midnight */
 .tower-metal {
   background: linear-gradient(180deg, #2a2a2a, #111);
   border: 1px solid #444;
   box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
 }
 
-/* Glowing red button */
+/* Glowing silver button */
 .btn-ryuk {
   position: relative;
   overflow: hidden;
-  background: var(--color-ryuk-red);
-  color: white;
-  border: 2px solid #ff4455;
+  background: rgba(192, 192, 192, 0.1);
+  color: var(--color-ryuk-silver);
+  border: 2px solid var(--color-ryuk-silver);
   transition: all 0.3s ease;
 }
 .btn-ryuk:hover {
-  background: #ff1a4d;
+  background: rgba(192, 192, 192, 0.2);
   box-shadow: 0 0 40px var(--color-ryuk-glow);
   transform: translateY(-3px);
 }
 
-/* Paper torn effect */
+/* Paper torn effect — moonlit */
 .torn-edge {
   position: relative;
-  background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
-  border-left: 4px solid var(--color-ryuk-red);
+  background: linear-gradient(180deg, #0f0f1a, #1a1a2e);
+  border-left: 4px solid var(--color-ryuk-silver);
 }
 .torn-edge::after {
   content: "";
@@ -131,40 +133,40 @@ body {
   left: 0;
   width: 100%;
   height: 12px;
-  background: radial-gradient(ellipse at 50% 100%, var(--color-sky-top), #000 70%);
+  background: radial-gradient(ellipse at 50% 100%, var(--color-midnight-top), #000 70%);
 }
 
-/* Profile card — Ryuk silhouette */
+/* Profile card — moonlit */
 .ryuk-card {
-  background: linear-gradient(145deg, rgba(26,26,26,0.9), rgba(10,10,10,0.95));
-  border: 1px solid rgba(255, 0, 51, 0.2);
+  background: linear-gradient(145deg, rgba(26,26,46,0.9), rgba(10,10,15,0.95));
+  border: 1px solid rgba(192, 192, 192, 0.2);
   backdrop-filter: blur(8px);
 }
 
-/* Code block style */
+/* Code block — moonlit */
 .code-block {
-  background: #0d0d0d;
-  border: 1px solid #333;
+  background: #0a0a0f;
+  border: 1px solid var(--color-ryuk-silver);
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Glowing dot for timeline */
+/* Glowing silver dot for timeline */
 .glow-dot {
   width: 16px;
   height: 16px;
-  background: var(--color-ryuk-red);
+  background: var(--color-ryuk-silver);
   border-radius: 50%;
-  box-shadow: 0 0 20px var(--color-ryuk-red), 0 0 40px var(--color-ryuk-glow);
+  box-shadow: 0 0 20px var(--color-ryuk-silver), 0 0 40px var(--color-ryuk-glow);
   animation: pulse-glow 3s ease-in-out infinite;
 }
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 15px var(--color-ryuk-red), 0 0 30px var(--color-ryuk-glow); transform: scale(1); }
-  50% { box-shadow: 0 0 30px var(--color-ryuk-red), 0 0 60px var(--color-ryuk-glow); transform: scale(1.1); }
+  0%, 100% { box-shadow: 0 0 15px var(--color-ryuk-silver), 0 0 30px var(--color-ryuk-glow); transform: scale(1); }
+  50% { box-shadow: 0 0 30px var(--color-ryuk-silver), 0 0 60px var(--color-ryuk-glow); transform: scale(1.1); }
 }
 
-/* Hero glowing name */
+/* Hero glowing name — moonlit */
 .glow-name {
-  text-shadow: 0 0 20px var(--color-ryuk-red), 0 0 50px var(--color-ryuk-red), 0 0 100px #ff0033;
+  text-shadow: 0 0 20px var(--color-ryuk-silver), 0 0 50px var(--color-ryuk-silver), 0 0 100px var(--color-ryuk-silver);
 }
 
 /* Scroll indicator animate */
@@ -173,5 +175,8 @@ body {
   50% { transform: translateY(10px); opacity: 1; }
 }
 
-/* Particle color — sunset dust */
-.sunset-particle { opacity: 0.5; }
+/* Particle color — moonlit dust */
+.moonlit-particle {
+  opacity: 0.5;
+  background: radial-gradient(circle, var(--color-moon-glow), transparent);
+}

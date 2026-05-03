@@ -16,16 +16,16 @@ export default function About() {
         {/* Left: Bio text */}
         <div className="space-y-8">
           <h2 className="text-4xl md:text-5xl font-cinzel text-[#f5f5dc]">
-            <span className="text-[#ff5c8d]">"I don't write code.</span>
+            <span className="text-[#c0c0c0]">"I don't write code.</span>
             <br />
-            <span className="text-[#ff9a5c]">I write destinies.</span>
+            <span className="text-[#e6f1ff]">I write destinies.</span>
           </h2>
 
           <div className="space-y-6 text-lg md:text-xl leading-relaxed text-[#f5f5dc]/90">
             <p>
               CS graduate from{" "}
-              <span className="text-[#ffdd57] font-semibold">SWOSU</span>.{" "}
-              <span className="text-[#ff5c8d] font-bold">Cum Laude</span>. I build
+              <span className="text-[#e6f1ff] font-semibold">SWOSU</span>.{" "}
+              <span className="text-[#c0c0c0] font-bold">Cum Laude</span>. I build
               full-stack applications, AI-powered platforms, and autonomous agents
               that operate 24/7 like a Shinigami's gaze.
             </p>
@@ -38,21 +38,21 @@ export default function About() {
 
           {/* Divider with shinigami eye */}
           <div className="relative py-4">
-            <div className="h-px bg-gradient-to-r from-transparent via-[#ff5c8d] to-transparent shadow-[0_0_15px_#ff5c8d]" />
+            <div className="h-px bg-gradient-to-r from-transparent via-[#c0c0c0] to-transparent shadow-[0_0_15px_#c0c0c0]" />
             <motion.div
-              className="absolute left-1/2 -translate-x-1/2 -top-3 w-8 h-8 rounded-full bg-[#0a0a0a] border-4 border-[#ff5c8d] flex items-center justify-center shadow-[0_0_20px_#ff0033]"
-              animate={{ scale: [1, 1.15, 1], boxShadow: ["0 0 15px #ff0033", "0 0 30px #ff0033", "0 0 15px #ff0033"] }}
+              className="absolute left-1/2 -translate-x-1/2 -top-3 w-8 h-8 rounded-full bg-[#0a0a0a] border-4 border-[#c0c0c0] flex items-center justify-center shadow-[0_0_20px_#c0c0c0]"
+              animate={{ scale: [1, 1.15, 1], boxShadow: ["0 0 15px #c0c0c0", "0 0 30px #c0c0c0", "0 0 15px #c0c0c0"] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <div className="w-3 h-3 bg-[#ff0033] rounded-full" />
+              <div className="w-3 h-3 bg-[#c0c0c0] rounded-full" />
             </motion.div>
           </div>
 
           {/* Location */}
-          <div className="flex items-center gap-3 text-[#ffdd57] text-lg">
+          <div className="flex items-center gap-3 text-[#e6f1ff] text-lg">
             <MapPin className="w-5 h-5" />
             <span>Plano, Texas</span>
-            <span className="text-[#ff5c8d]">|</span>
+            <span className="text-[#c0c0c0]">|</span>
             <span className="text-[#f5f5dc]/70">Open to relocation</span>
           </div>
 
@@ -94,8 +94,8 @@ export default function About() {
 
         {/* Right: Ryuk-inspired silhouette */}
         <div className="relative flex items-center justify-center">
-          {/* Glowing backdrop */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#ff0033]/10 via-transparent to-[#ff9a5c]/10 blur-3xl rounded-full" />
+          {/* Glowing backdrop — moonlit silver */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#c0c0c0]/10 via-transparent to-[#e6f1ff]/10 blur-3xl rounded-full" />
 
           {/* Ryuk perched SVG */}
           <motion.svg
@@ -117,7 +117,7 @@ export default function About() {
                 y={`${200 - top}`}
                 width={60}
                 height="2"
-                fill="#333"
+                fill="#1a1a1a"
               />
             ))}
             <ellipse cx="140" cy="200" rx="30" ry="8" fill="#111" />
@@ -163,9 +163,9 @@ export default function About() {
                  Z"
               fill="#0a0a0a"
             />
-            {/* Eyes */}
-            <circle cx="90" cy="65" r="7" fill="#ff0033" filter="drop-shadow(0 0 10px #ff0033)" />
-            <circle cx="150" cy="65" r="7" fill="#ff0033" filter="drop-shadow(0 0 10px #ff0033)" />
+            {/* Eyes — silver glow */}
+            <circle cx="90" cy="65" r="7" fill="#c0c0c0" filter="drop-shadow(0 0 12px #c0c0c0)" />
+            <circle cx="150" cy="65" r="7" fill="#c0c0c0" filter="drop-shadow(0 0 12px #c0c0c0)" />
             {/* Wings */}
             <path d="M50 90 L20 140 L25 150 L55 105" fill="none" stroke="#111" strokeWidth="3" />
             <path d="M230 90 L260 140 L255 150 L225 105" fill="none" stroke="#111" strokeWidth="3" />

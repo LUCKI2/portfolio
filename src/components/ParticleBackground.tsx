@@ -23,7 +23,8 @@ export default function ParticleBackground() {
     let w = canvas.width;
     let h = canvas.height;
 
-    const colors = ["#ff5c8d", "#ff9a5c", "#ffdd57", "#ff6b9d", "#ff8c42"];
+    // Moonlit palette: soft whites, silvers, pale blues
+    const colors = ["#e6f1ff", "#c0c0c0", "#b0b0b0", "#ffffff", "#a0a0a0"];
 
     class Particle {
       x: number;
@@ -79,13 +80,13 @@ export default function ParticleBackground() {
     for (let i = 0; i < count; i++) particles.push(new Particle());
 
     const animate = () => {
-      // Fade effect (trail)
-      ctx.fillStyle = "rgba(45, 27, 78, 0.08)";
+      // Fade effect (trail) — midnight base
+      ctx.fillStyle = "rgba(15, 15, 26, 0.08)";
       ctx.fillRect(0, 0, w, h);
 
-      // Glow layer
+      // Glow layer — subtle silver bloom from center
       const g = ctx.createRadialGradient(w / 2, h / 2, 0, w / 2, h / 2, w * 0.8);
-      g.addColorStop(0, "rgba(255, 92, 141, 0.1)");
+      g.addColorStop(0, "rgba(192, 192, 192, 0.08)");
       g.addColorStop(1, "rgba(0, 0, 0, 0)");
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, w, h);

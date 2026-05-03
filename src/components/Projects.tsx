@@ -95,10 +95,10 @@ export default function Projects() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-4 text-[#ff5c8d] tracking-wider">
+        <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-4 text-[#c0c0c0] tracking-wider">
           THE DEATH NOTE
         </h2>
-        <p className="text-center text-[#ff9a5c] tracking-widest uppercase text-sm mb-16">
+        <p className="text-center text-[#e6f1ff] tracking-widest uppercase text-sm mb-16">
           Projects Written in Blood
         </p>
       </motion.div>
@@ -116,21 +116,21 @@ export default function Projects() {
             variants={itemVariants}
             className={`${project.featured ? "md:col-span-2" : ""}`}
           >
-            <div className="torn-edge bg-[#0f0f0f] p-8 transition-all duration-500 hover:border-l-[#ff5c8d] border-l-4 border-[#333]">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ff5c8d]/5 via-transparent to-[#ff9a5c]/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+            <div className="torn-edge bg-[#0f0f1a] p-8 transition-all duration-500 hover:border-l-[#c0c0c0] border-l-4 border-[#333]">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#c0c0c0]/5 via-transparent to-[#e6f1ff]/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
 
               <div className="relative">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-3xl md:text-4xl font-cinzel text-[#f5f5dc] mb-2 group-hover:text-[#ff5c8d] transition-colors">
+                    <h3 className="text-3xl md:text-4xl font-cinzel text-[#f5f5dc] mb-2 group-hover:text-[#c0c0c0] transition-colors">
                       {project.name}
                     </h3>
-                    <p className="text-lg text-[#ffdd57] mb-4">{project.description}</p>
+                    <p className="text-lg text-[#e6f1ff] mb-4">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tech.map((t) => (
                         <span
                           key={t}
-                          className="px-3 py-1 text-xs border border-[#ff5c8d]/30 rounded-full text-[#f5f5dc]/80 bg-[#0a0a0a]"
+                          className="px-3 py-1 text-xs border border-[#c0c0c0]/30 rounded-full text-[#f5f5dc]/80 bg-[#0a0a0f]"
                         >
                           {t}
                         </span>
@@ -156,7 +156,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2 bg-[#1a1a1a] text-[#f5f5dc] rounded border border-[#ff5c8d]/30 hover:border-[#ff5c8d] transition-all"
+                      className="inline-flex items-center gap-2 px-5 py-2 bg-[#1a1a2e] text-[#f5f5dc] rounded border border-[#c0c0c0]/30 hover:border-[#c0c0c0] transition-all"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -166,8 +166,8 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <div className="mt-6 w-full h-px bg-gradient-to-r from-transparent via-[#ff5c8d] to-transparent" />
-                <p className="mt-2 text-right text-xs text-[#ff5c8d]/60 font-mono">
+                <div className="mt-6 w-full h-px bg-gradient-to-r from-transparent via-[#c0c0c0] to-transparent" />
+                <p className="mt-2 text-right text-xs text-[#c0c0c0]/60 font-mono">
                   Entry #{String(idx + 1).padStart(3, "0")}
                 </p>
               </div>

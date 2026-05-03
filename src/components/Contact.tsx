@@ -12,10 +12,10 @@ export default function Contact() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-4 text-[#ff5c8d] tracking-wider">
+        <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-4 text-[#c0c0c0] tracking-wider">
           WRITE MY NAME
         </h2>
-        <p className="text-center text-[#ff9a5c] tracking-widest uppercase text-sm mb-16">
+        <p className="text-center text-[#e6f1ff] tracking-widest uppercase text-sm mb-16">
           In the Death Note... or just send a message
         </p>
       </motion.div>
@@ -30,7 +30,7 @@ export default function Contact() {
         >
           <form action="https://formspree.io/f/mqazqkqp" method="POST" className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm uppercase tracking-wider text-[#ffdd57] mb-2 font-cinzel">
+              <label htmlFor="name" className="block text-sm uppercase tracking-wider text-[#e6f1ff] mb-2 font-cinzel">
                 Your Name
               </label>
               <input
@@ -39,12 +39,12 @@ export default function Contact() {
                 id="name"
                 required
                 placeholder="Enter your name..."
-                className="w-full bg-[#0a0a0a] border border-[#ff5c8d]/30 rounded px-4 py-3 text-[#f5f5dc] placeholder:text-[#f5f5dc]/40 focus:outline-none focus:border-[#ff5c8d] focus:ring-1 focus:ring-[#ff5c8d] transition-all font-serif"
+                className="w-full bg-[#0a0a0a] border border-[#c0c0c0]/30 rounded px-4 py-3 text-[#f5f5dc] placeholder:text-[#f5f5dc]/40 focus:outline-none focus:border-[#c0c0c0] focus:ring-1 focus:ring-[#c0c0c0] transition-all font-serif"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm uppercase tracking-wider text-[#ffdd57] mb-2 font-cinzel">
+              <label htmlFor="email" className="block text-sm uppercase tracking-wider text-[#e6f1ff] mb-2 font-cinzel">
                 Email Address
               </label>
               <input
@@ -53,12 +53,12 @@ export default function Contact() {
                 id="email"
                 required
                 placeholder="your@email.com"
-                className="w-full bg-[#0a0a0a] border border-[#ff5c8d]/30 rounded px-4 py-3 text-[#f5f5dc] placeholder:text-[#f5f5dc]/40 focus:outline-none focus:border-[#ff5c8d] focus:ring-1 focus:ring-[#ff5c8d] transition-all font-serif"
+                className="w-full bg-[#0a0a0a] border border-[#c0c0c0]/30 rounded px-4 py-3 text-[#f5f5dc] placeholder:text-[#f5f5dc]/40 focus:outline-none focus:border-[#c0c0c0] focus:ring-1 focus:ring-[#c0c0c0] transition-all font-serif"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm uppercase tracking-wider text-[#ffdd57] mb-2 font-cinzel">
+              <label htmlFor="message" className="block text-sm uppercase tracking-wider text-[#e6f1ff] mb-2 font-cinzel">
                 Message
               </label>
               <textarea
@@ -67,7 +67,7 @@ export default function Contact() {
                 rows={6}
                 required
                 placeholder="Write your message here..."
-                className="w-full bg-[#0a0a0a] border border-[#ff5c8d]/30 rounded px-4 py-3 text-[#f5f5dc] placeholder:text-[#f5f5dc]/40 focus:outline-none focus:border-[#ff5c8d] focus:ring-1 focus:ring-[#ff5c8d] transition-all resize-none font-serif"
+                className="w-full bg-[#0a0a0a] border border-[#c0c0c0]/30 rounded px-4 py-3 text-[#f5f5dc] placeholder:text-[#f5f5dc]/40 focus:outline-none focus:border-[#c0c0c0] focus:ring-1 focus:ring-[#c0c0c0] transition-all resize-none font-serif"
               />
             </div>
 
@@ -95,10 +95,10 @@ export default function Contact() {
             <div className="space-y-6">
               <a
                 href="mailto:christipher.trufant@outlook.com"
-                className="flex items-center gap-4 text-xl text-[#f5f5dc]/80 hover:text-[#ff5c8d] transition-colors group"
+                className="flex items-center gap-4 text-xl text-[#f5f5dc]/80 hover:text-[#c0c0c0] transition-colors group"
               >
-                <div className="w-12 h-12 rounded-full bg-[#ff5c8d]/20 border border-[#ff5c8d]/30 flex items-center justify-center group-hover:border-[#ff5c8d] group-hover:bg-[#ff5c8d]/40 transition-all">
-                  <Mail className="w-5 h-5 text-[#ff5c8d]" />
+                <div className="w-12 h-12 rounded-full bg-[#c0c0c0]/20 border border-[#c0c0c0]/30 flex items-center justify-center group-hover:border-[#c0c0c0] group-hover:bg-[#c0c0c0]/40 transition-all">
+                  <Mail className="w-5 h-5 text-[#c0c0c0]" />
                 </div>
                 <span>CHR378@outlook.com</span>
               </a>
@@ -106,10 +106,10 @@ export default function Contact() {
                 href="https://github.com/chrisoutthepaint34-2267"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-xl text-[#f5f5dc]/80 hover:text-[#ff5c8d] transition-colors group"
+                className="flex items-center gap-4 text-xl text-[#f5f5dc]/80 hover:text-[#c0c0c0] transition-colors group"
               >
-                <div className="w-12 h-12 rounded-full bg-[#ff5c8d]/20 border border-[#ff5c8d]/30 flex items-center justify-center group-hover:border-[#ff5c8d] group-hover:bg-[#ff5c8d]/40 transition-all">
-                  <Github className="w-5 h-5 text-[#ff5c8d]" />
+                <div className="w-12 h-12 rounded-full bg-[#c0c0c0]/20 border border-[#c0c0c0]/30 flex items-center justify-center group-hover:border-[#c0c0c0] group-hover:bg-[#c0c0c0]/40 transition-all">
+                  <Github className="w-5 h-5 text-[#c0c0c0]" />
                 </div>
                 <span>github.com/chrisoutthepaint34-2267</span>
               </a>
@@ -117,21 +117,21 @@ export default function Contact() {
                 href="https://linkedin.com/in/christipher-trufant"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-xl text-[#f5f5dc]/80 hover:text-[#ff5c8d] transition-colors group"
+                className="flex items-center gap-4 text-xl text-[#f5f5dc]/80 hover:text-[#c0c0c0] transition-colors group"
               >
-                <div className="w-12 h-12 rounded-full bg-[#ff5c8d]/20 border border-[#ff5c8d]/30 flex items-center justify-center group-hover:border-[#ff5c8d] group-hover:bg-[#ff5c8d]/40 transition-all">
-                  <Linkedin className="w-5 h-5 text-[#ff5c8d]" />
+                <div className="w-12 h-12 rounded-full bg-[#c0c0c0]/20 border border-[#c0c0c0]/30 flex items-center justify-center group-hover:border-[#c0c0c0] group-hover:bg-[#c0c0c0]/40 transition-all">
+                  <Linkedin className="w-5 h-5 text-[#c0c0c0]" />
                 </div>
                 <span>linkedin.com/in/christipher-trufant</span>
               </a>
             </div>
           </div>
 
-          <div className="border-l-4 border-[#ff5c8d] pl-6 py-4 bg-[#0a0a0a]/50">
+          <div className="border-l-4 border-[#c0c0c0] pl-6 py-4 bg-[#0a0a0a]/50">
             <p className="text-xl italic text-[#f5f5dc]/80">
               &ldquo;I don&apos;t just write code — I write destinies.&rdquo;
             </p>
-            <p className="mt-2 text-[#ffdd57] text-right">— CT</p>
+            <p className="mt-2 text-[#e6f1ff] text-right">— CT</p>
           </div>
         </motion.div>
       </div>

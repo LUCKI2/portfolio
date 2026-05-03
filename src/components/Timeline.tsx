@@ -50,7 +50,8 @@ export default function Timeline() {
       </motion.div>
 
       <div className="relative">
-        <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-[#ff5c8d] to-transparent transform md:-translate-x-1/2 shadow-[0_0_15px_#ff5c8d,0_0_30px_#ff0033]" />
+        {/* Vertical timeline — moonlit silver line */}
+        <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-[#c0c0c0] to-transparent transform md:-translate-x-1/2 shadow-[0_0_15px_#c0c0c0,0_0_30px_#c0c0c0]" />
 
         {milestones.map((m, idx) => (
           <motion.div
@@ -63,8 +64,8 @@ export default function Timeline() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
           >
-            {/* Dot */}
-            <div className="absolute left-6 md:left-1/2 w-5 h-5 bg-[#ff0033] rounded-full border-4 border-black shadow-[0_0_15px_#ff0033] transform md:-translate-x-1/2 z-10 glow-dot" />
+            {/* Glowing dot — silver moonlit */}
+            <div className="absolute left-6 md:left-1/2 w-5 h-5 bg-[#c0c0c0] rounded-full border-4 border-[#0a0a0a] shadow-[0_0_15px_#c0c0c0] transform md:-translate-x-1/2 z-10 glow-dot" />
 
             {/* Content */}
             <div
@@ -73,17 +74,17 @@ export default function Timeline() {
               }`}
             >
               <motion.div
-                className="bg-[#0a0a0a] border border-[#ff5c8d]/20 p-6 rounded"
-                whileHover={{ scale: 1.02, borderColor: "#ff5c8d60" }}
+                className="bg-[#0a0a0a] border border-[#c0c0c0]/20 p-6 rounded"
+                whileHover={{ scale: 1.02, borderColor: "rgba(192,192,192,0.4)" }}
                 transition={{ duration: 0.3 }}
               >
-                <span className="inline-block text-[#ff5c8d] font-cinzel text-sm mb-2">{m.year}</span>
+                <span className="inline-block text-[#c0c0c0] font-cinzel text-sm mb-2">{m.year}</span>
                 <h3 className="text-xl md:text-2xl font-cinzel text-[#f5f5dc] mb-2">{m.title}</h3>
-                <p className="text-[#ffdd57] text-sm mb-3">{m.subtitle}</p>
+                <p className="text-[#e6f1ff] text-sm mb-3">{m.subtitle}</p>
                 <p className="text-[#f5f5dc]/70 leading-relaxed">{m.description}</p>
 
                 <div
-                  className={`absolute top-8 w-8 h-0.5 bg-[#ff5c8d] ${
+                  className={`absolute top-8 w-8 h-0.5 bg-[#c0c0c0] ${
                     idx % 2 === 0 ? "-right-8 md:left-auto md:right-0" : "-left-8 md:left-0 md:right-auto"
                   } hidden md:block`}
                 />

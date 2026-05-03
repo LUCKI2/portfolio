@@ -15,16 +15,16 @@ export default function LoadingScreen() {
       className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-1000 ${
         loading ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
-      style={{ background: "linear-gradient(to bottom, #2d1b4e, #1a0a2e)" }}
+      style={{ background: "linear-gradient(to bottom, #0f0f1a, #1a1a2e)" }}
     >
       <div className="relative">
-        {/* Ryuk silhouette */}
+        {/* Ryuk silhouette — small loading icon */}
         <svg width="120" height="160" viewBox="0 0 120 160" className="drop-shadow-2xl">
           {/* Tower base */}
           <rect x="50" y="140" width="20" height="20" fill="#0a0a0a" />
           {/* Ladder */}
-          <line x1="45" y1="130" x2="45" y2="160" stroke="#333" strokeWidth="2" />
-          <line x1="75" y1="130" x2="75" y2="160" stroke="#333" strokeWidth="2" />
+          <line x1="45" y1="130" x2="45" y2="160" stroke="#1a1a1a" strokeWidth="2" />
+          <line x1="75" y1="130" x2="75" y2="160" stroke="#1a1a1a" strokeWidth="2" />
           {/* Platform */}
           <rect x="40" y="130" width="40" height="5" fill="#111" />
           {/* Ryuk body */}
@@ -61,16 +61,16 @@ export default function LoadingScreen() {
                Z"
             fill="#0a0a0a"
           />
-          {/* Eyes — glowing red */}
-          <circle cx="62" cy="52" r="4" fill="#ff0033" className="animate-pulse" />
-          <circle cx="78" cy="52" r="4" fill="#ff0033" className="animate-pulse" />
+          {/* Eyes — glowing silver */}
+          <circle cx="62" cy="52" r="4" fill="#c0c0c0" className="animate-pulse" filter="drop-shadow(0 0 8px #c0c0c0)" />
+          <circle cx="78" cy="52" r="4" fill="#c0c0c0" className="animate-pulse" filter="drop-shadow(0 0 8px #c0c0c0)" />
           {/* Wings/shoulders hint */}
           <path d="M40 100 L20 120 L25 125 L45 110" fill="none" stroke="#111" strokeWidth="3" />
           <path d="M80 100 L100 120 L95 125 L75 110" fill="none" stroke="#111" strokeWidth="3" />
         </svg>
 
-        {/* Loading text */}
-        <p className="text-center mt-6 text-[#ff5c8d] font-cinzel tracking-widest text-lg animate-pulse">
+        {/* Loading text — moonlit silver */}
+        <p className="text-center mt-6 text-[#c0c0c0] font-cinzel tracking-widest text-lg animate-pulse">
           SUMMONING RYUK...
         </p>
       </div>

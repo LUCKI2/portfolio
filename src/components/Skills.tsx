@@ -21,7 +21,7 @@ export default function Skills() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-20 text-[#ffdd57] tracking-wider">
+        <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-20 text-[#e6f1ff] tracking-wider">
           ARSENAL
         </h2>
 
@@ -36,7 +36,7 @@ export default function Skills() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
               <div className="death-note-page rounded-lg p-8 min-h-[280px] relative overflow-hidden border border-[#333]">
-                <h3 className="text-2xl font-cinzel text-[#ff5c8d] mb-6 border-b border-[#ff5c8d]/30 pb-3 tracking-wider">
+                <h3 className="text-2xl font-cinzel text-[#c0c0c0] mb-6 border-b border-[#c0c0c0]/30 pb-3 tracking-wider">
                   {category.toUpperCase()}
                 </h3>
                 <ul className="space-y-3">
@@ -49,17 +49,17 @@ export default function Skills() {
                       transition={{ delay: idx * 0.1 + i * 0.05 }}
                       viewport={{ once: true }}
                     >
-                      <span className="w-2 h-2 bg-[#ff5c8d] rounded-full" />
+                      <span className="w-2 h-2 bg-[#c0c0c0] rounded-full" />
                       {skill}
                     </motion.li>
                   ))}
                 </ul>
 
-                {/* Glowing corner on hover */}
-                <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#ff5c8d]/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                {/* Glowing corner on hover — silver moonlit */}
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#c0c0c0]/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
-              <div className="absolute -bottom-4 -right-2 w-10 h-14 bg-[#0a0a0a] border border-[#ff5c8d]/30 rounded flex items-center justify-center text-xs text-[#ff5c8d] font-mono">
+              <div className="absolute -bottom-4 -right-2 w-10 h-14 bg-[#0a0a0a] border border-[#c0c0c0]/30 rounded flex items-center justify-center text-xs text-[#c0c0c0] font-mono">
                 {String(idx + 1).padStart(2, "0")}
               </div>
             </motion.div>
@@ -67,7 +67,7 @@ export default function Skills() {
         </div>
       </motion.div>
 
-      {/* Quote */}
+      {/* Quote — moonlit silver */}
       <motion.blockquote
         className="mt-24 text-center max-w-3xl mx-auto"
         initial={{ opacity: 0 }}
@@ -77,10 +77,10 @@ export default function Skills() {
       >
         <p className="text-2xl md:text-3xl font-cinzel text-[#f5f5dc] italic leading-relaxed">
           &ldquo;The pen is mightier than the sword, but the{" "}
-          <span className="text-[#ff5c8d]">keyboard</span> is mightier than
+          <span className="text-[#c0c0c0]">keyboard</span> is mightier than
           both.&rdquo;
         </p>
-        <footer className="mt-4 text-[#ffdd57] text-sm tracking-widest uppercase">
+        <footer className="mt-4 text-[#e6f1ff] text-sm tracking-widest uppercase">
           — Christipher Trufant
         </footer>
       </motion.blockquote>
