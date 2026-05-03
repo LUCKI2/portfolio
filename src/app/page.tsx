@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
 import ParticleBackground from "@/components/ParticleBackground";
 import Hero from "@/components/Hero";
@@ -65,10 +66,8 @@ function ScrollProgress() {
   return (
     <div
       id="scroll-bar"
-      className="fixed top-0 left-0 h-1 bg-gradient-to-r from-[#ff5c8d] to-[#ffdd57] z-50 shadow-[0_0_10px_#ff5c8d]"
+      className="fixed top-0 left-0 h-1 bg-gradient-to-r from-[#c0c0c0] to-[#e6f1ff] z-50 shadow-[0_0_10px_#c0c0c0]"
       style={{ width: "0%", transition: "width 0.1s ease-out" }}
     />
   );
 }
-
-import { useEffect } from "react";
