@@ -98,9 +98,7 @@ export default function Projects() {
         <h2 className="text-5xl md:text-6xl font-cinzel text-center mb-4 text-[#c0c0c0] tracking-wider">
           THE DEATH NOTE
         </h2>
-        <p className="text-center text-[#e6f1ff] tracking-widest uppercase text-sm mb-16">
-          Projects Written in Blood
-        </p>
+
       </motion.div>
 
       <motion.div

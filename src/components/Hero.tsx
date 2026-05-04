@@ -83,101 +83,19 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5, delay: 3, ease: "easeOut" }}
       >
-        {/* Ryuk SVG — black silhouette */}
-        <svg
-          width="200"
-          height="260"
-          viewBox="0 0 200 260"
-          className="relative drop-shadow-2xl"
-          style={{ marginLeft: "-100px" }}
-        >
-          {/* Full moon behind Ryuk's head — soft halo */}
-          <circle
-            cx="100"
-            cy="60"
-            r="55"
-            fill="none"
-            stroke="#e6f1ff"
-            strokeWidth="2"
-            opacity="0.3"
+        
+        {/* Ryuk — from the reference, perched under the moon */}
+        <div className="relative">
+          {/* Full moon halo behind */}
+          <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-72 h-72 md:w-96 md:h-96 rounded-full bg-white/5 blur-3xl" />
+          {/* Reference image */}
+          <img
+            src="/ryuk-moon.jpg"
+            alt="Ryuk perched under the moon"
+            className="max-h-[70vh] object-contain drop-shadow-2xl"
+            style={{ maxWidth: "min(90vw, 500px)" }}
           />
-          <circle
-            cx="100"
-            cy="60"
-            r="40"
-            fill="rgba(230,241,255,0.08)"
-          />
-
-          {/* Wings — outstretched */}
-          {/* Left wing */}
-          <path
-            d="M30 90 C-20 80 -60 60 -80 30 C-90 20 -100 30 -105 50 C-110 70 -90 100 -70 110 C-50 120 -30 110 -20 100 L30 90 Z"
-            fill="#0a0a0a"
-            stroke="#1a1a1a"
-            strokeWidth="1"
-          />
-          {/* Right wing */}
-          <path
-            d="M170 90 C220 80 260 60 280 30 C290 20 300 30 305 50 C310 70 290 100 270 110 C250 120 230 110 220 100 L170 90 Z"
-            fill="#0a0a0a"
-            stroke="#1a1a1a"
-            strokeWidth="1"
-          />
-
-          {/* Body */}
-          <path
-            d="M85 70
-               C70 70, 50 90, 45 120
-               L40 170
-               C40 185, 50 195, 60 190
-               L75 175
-               L75 195 L125 195 L125 175
-               L140 190
-               C150 195, 160 185, 160 170
-               L155 120
-               C150 90, 130 70, 115 70
-               Z"
-            fill="#0a0a0a"
-          />
-
-          {/* Head */}
-          <ellipse cx="100" cy="55" rx="30" ry="35" fill="#0a0a0a" />
-
-          {/* Spiky hair */}
-          <path
-            d="M70 45 L65 20 L80 38 L85 10 L100 35 L115 10 L130 38 L135 20 L130 45 Z"
-            fill="#0a0a0a"
-          />
-
-          {/* Glowing silver eyes */}
-          <circle cx="85" cy="55" r="6" fill="#c0c0c0" filter="drop-shadow(0 0 10px #c0c0c0)" />
-          <circle cx="115" cy="55" r="6" fill="#c0c0c0" filter="drop-shadow(0 0 10px #c0c0c0)" />
-
-          {/* Long thin arm holding Death Note */}
-          <path
-            d="M145 100 L170 130 L175 180 L165 185 L155 140 L120 115"
-            fill="none"
-            stroke="#0a0a0a"
-            strokeWidth="12"
-            strokeLinecap="round"
-          />
-          {/* Death Note notebook */}
-          <rect
-            x="168"
-            y="175"
-            width="32"
-            height="44"
-            rx="3"
-            fill="#1a1a2e"
-            stroke="var(--color-ryuk-silver)"
-            strokeWidth="1"
-          />
-          {/* DEATH note lines */}
-          <line x1="174" y1="188" x2="194" y2="188" stroke="#333" strokeWidth="1" />
-          <line x1="174" y1="198" x2="194" y2="198" stroke="#333" strokeWidth="1" />
-          <line x1="174" y1="208" x2="194" y2="208" stroke="#333" strokeWidth="1" />
-        </svg>
-      </motion.div>
+        </div></motion.div>
 
       {/* Name — below Ryuk, moonlit glow */}
       <motion.div
